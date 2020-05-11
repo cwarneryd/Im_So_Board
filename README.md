@@ -1,12 +1,11 @@
 # I'm So Board
 ## 2.00b Final Toy Product, 2020
 ### Introduction
-This is my final product for my toy design class, 2.00b, which was re-structured to be a remote design challenge
+This is my final product for 2.00b, Toy Product Design, which was re-structured to be a remote design challenge
 after students were kicked off campus due to Coronavirus. Each student was shipped a kit of materials (plus a $20 giftcard) and tasked with creating a toy that would entertain the people quarantined with them on "their island." Embracing this theme, I decided to create a toy that could be played while watching Zoom lectures - a tedious part of my daily routine when classes became virtualized.
 ### Game Overview
-I'm So Board is a wireless game console that combines two competitive, two-player games designed to be played while watching Zoom lectures. The first game, Simon 2.0, is a twist on the classic memory game Simon, but with two colors and two players competing to see who fails first! The second game, Word Nerd, is a twist on a drinking game, where each player races to hear the most words mentioned in their lecture.
-### Toy Specifications
-I'm So Board runs on an Arduino Uno. The two boards communicate wirelessly via NRF24L01 chips. Individual single-color LEDs light up to portray a pattern in Simon and are connected to buttons for the purpose of repeating the pattern. Each board also includes two additional buttons for controlling game aspects in Word Nerd. I also used two different screens (did not have access to two of the same kind) – a Monochrome 128x32 12C OLED graphic display and an LCD display. 
-The games were designed for a board  (design below) Read below for details on the specifics of each game and how to run them!
-### Simon 2.0
-### Word Nerd
+I'm So Board is a wireless game console combining two competitive, two-player games designed to be played while watching Zoom lectures. The first game, Simon 2.0, is a twist on the classic memory game Simon, but with two colors and two players competing to see who fails first! The second game, Word Nerd, is drinking game-inspired, where each player races to hear the most words mentioned in their lecture.
+### Toy Specifications and Gameplay
+I'm So Board runs on an Arduino Uno. The two boards communicate wirelessly via NRF24L01 chips. Individual single-color LEDs light up to portray a pattern in Simon 2.0 and are also connected to buttons for the purpose of repeating the pattern. Each board also includes two additional buttons for controlling game aspects in Word Nerd. Each board also includes a screen –  a Monochrome 128x32 12C OLED graphic display or an LCD display (I did not have access to two of the same kind). The electronic components are contained on a breadboard, which is attached (along with the Arduino) to a balsa-wood base with screws. I also added a balsa-wood cover made from hot-glued balsa wood pieces to cover many of the wires. This cover includes a wooden dowel that acts as a push stick for the "reset" button the Arduino. To play the games, the code for either game just needs to be uploaded to the Arduino using a USB cord. Simon can be reset easily, and Word Nerd plays on a continuous loop.
+### Simon 2.0 – Code Specifics
+### Word Nerd – Code Specifics
