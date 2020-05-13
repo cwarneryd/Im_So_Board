@@ -120,11 +120,9 @@ void loop(void) {
     l = 1;
   }
   else {
-    radio.write(&myLEDlist, sizeof(myLEDlist)); //might need to open writin pipe again here...
+    radio.write(&myLEDlist, sizeof(myLEDlist));
     delay(50);
-    //radio.openReadingPipe(1, addresses[1]); might not need this!
     radio.startListening();
-    //Serial.print("got here");
   
     //RECEIVE LOOP!!!
     while(true)
@@ -132,7 +130,6 @@ void loop(void) {
       if (radio.available())
       {
         l = l+1;
-        //Serial.print("a");
         int text[30] = {};
         radio.read(&text, sizeof(text));
         if (text[0] == 1 or text[0]==0) {
