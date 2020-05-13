@@ -46,7 +46,7 @@ void setup(void) {
   radio.enableDynamicPayloads();//not sure if either of these lines are necessary...
   radio.openWritingPipe(addresses[0]); //Get NRF24L01 ready to transmit
   radio.openReadingPipe(1, addresses[1]);
-  radio.startListening(); //stop listening because we start as the sender
+  radio.startListening();
   
   Serial.begin(9600);
 
